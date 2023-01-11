@@ -1,0 +1,25 @@
+<nav class="navbar py-3 navbar-expand-lg">
+    <a class="navbar-brand" href="#">
+        <img src="../../../assets/logo.jpg" alt="logo data school bolivia" class="ms-4" width="140" height="70">
+    </a>
+    <button [ngClass]="{btn:true, toggle:true}" (click)="showNavbar()">
+        <mat-icon color="FFF">menu</mat-icon>
+    </button>
+    <div [ngClass]="{collap:true, show:this.show}">
+        <ul class="navbar-nav"> 
+            <li>
+                <a routerLink="home">INICIO</a>
+            </li>
+
+            <li>
+                <a routerLink="about">NOSOTROS</a>
+            </li>
+            <li>
+                <a routerLink="courses">CURSOS</a>
+            </li>
+            <li>
+                <a routerLink="contact">CONTÁCTANOS</a>
+            </li>
+        </ul>
+    </div>
+</nav>
