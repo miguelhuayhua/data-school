@@ -5,8 +5,8 @@
     <button [ngClass]="{btn:true, toggle:true}" (click)="showNavbar()">
         <mat-icon color="FFF">menu</mat-icon>
     </button>
-    <div [ngClass]="{collap:true, show:this.show}">
-        <ul class="navbar-nav"> 
+    <div [ngClass]="{collap:true, show:this.show, ani:!this.show}">
+        <ul class="navbar-nav">
             <li>
                 <a routerLink="home">INICIO</a>
             </li>
