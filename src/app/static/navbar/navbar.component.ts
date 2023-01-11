@@ -9,6 +9,9 @@ export class NavbarComponent {
   show: boolean = false;
   showNavbar() {
     this.show = !this.show;
-    console.log(this.show)
+  }
+
+  closeNavbar() {
+    this.show = false;
   }
 }

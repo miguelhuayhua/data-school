@@ -5,7 +5,7 @@
     <button [ngClass]="{btn:true, toggle:true}" (click)="showNavbar()">
         <mat-icon color="FFF">menu</mat-icon>
     </button>
-    <div [ngClass]="{collap:true, show:this.show, ani:!this.show}">
+    <div class="collapse-lg">
         <ul class="navbar-nav">
             <li>
                 <a routerLink="home">INICIO</a>
@@ -18,6 +18,23 @@
                 <a routerLink="courses">CURSOS</a>
             </li>
             <li>
+                <a routerLink="contact">CONTÁCTANOS</a>
+            </li>
+        </ul>
+    </div>
+    <div [ngClass]="{collap:true, show:this.show, ani:!this.show}" (click)="closeNavbar()">
+        <ul class="navbar-nav flex-column nav-lg">
+            <li class="route-style">
+                <a routerLink="home">INICIO</a>
+            </li>
+
+            <li class="route-style">
+                <a routerLink="about">NOSOTROS</a>
+            </li>
+            <li class="route-style">
+                <a routerLink="courses">CURSOS</a>
+            </li>
+            <li class="route-style">
                 <a routerLink="contact">CONTÁCTANOS</a>
             </li>
         </ul>
