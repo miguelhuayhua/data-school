@@ -11,6 +11,7 @@ import { CursosComponent } from './cursos/cursos.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
+import { FooterComponent } from './static/footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { MatIconModule } from '@angular/material/icon';
     NavbarComponent,
     NosotrosComponent,
     CursosComponent,
-    ContactoComponent
+    ContactoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
