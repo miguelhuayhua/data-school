@@ -1,5 +1,7 @@
 nav {
     background-color: #001d3d;
+    height: 90px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.502);
 }
 
 li {
@@ -33,7 +35,7 @@ li {
 
 .collap {
     position: fixed;
-    top: 112px;
+    top: 90px;
     left: 0;
     padding: 10px auto;
     transform: translateX(-100%);
@@ -65,6 +67,25 @@ li {
         transition: border-bottom 1s;
         cursor: pointer;
     }
+}
+
+.fixed {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100%;
+    animation: fixed 1s;
+}
+
+@keyframes fixed {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+
 }
 
 .show {

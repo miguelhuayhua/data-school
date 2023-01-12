@@ -1,5 +1,5 @@
-<nav class="navbar py-3 navbar-expand-lg">
-    <a class="navbar-brand" href="#">
+<nav class=" {{this.fixed?'navbar navbar-expand-lg fixed':'navbar navbar-expand-lg'}}">
+    <a  href="#">
         <img src="../../../assets/logo.jpg" alt="logo data school bolivia" class="ms-4" width="140" height="70">
     </a>
     <button [ngClass]="{btn:true, toggle:true}" (click)="showNavbar()">

@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -7,11 +7,16 @@ import { Component, ViewChild } from '@angular/core';
 })
 export class NavbarComponent {
   show: boolean = false;
+  fixed: boolean = false;
   showNavbar() {
     this.show = !this.show;
   }
 
   closeNavbar() {
     this.show = false;
+  }
+  @HostListener('window:scroll', ['$event'])
+  onScroll(event: any) {
+    window.scrollY > 500 ? this.fixed = true : this.fixed = false;
   }
 }

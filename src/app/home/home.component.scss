@@ -1,0 +1,86 @@
+.typer h3 {
+    color: #c00000;
+    font-family: monospace;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #c00000;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    font-weight: bold;
+    font-style: italic;
+
+    /* Keeps the content on a single line */
+
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation:
+        typing 6s steps(30, end) infinite,
+        blink-caret .70s step-end infinite;
+
+}
+
+.custom-btn {
+    border-radius: 20px;
+    border: #001d3d solid 1px;
+    transition: background-color .5s, color .5s;
+
+    &:hover {
+        background-color: #001d3d;
+        color: whitesmoke;
+        transition: background-color .5s, color .5s;
+    }
+}
+
+h2 {
+    color: #001d3d;
+    padding: 20px 0;
+    font-weight: 900;
+}
+
+hr {
+    height: 4px;
+    opacity: 1;
+    background-color: #c00000;
+    flex: 1;
+}
+
+.presentation{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 0
+    }
+
+    50% {
+        width: 100%;
+    }
+
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from {
+        border-color: #c00000;
+    }
+
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: transparent;
+    }
+}
