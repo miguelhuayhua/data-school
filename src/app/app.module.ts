@@ -14,7 +14,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { FooterComponent } from './static/footer/footer.component';
 import { CursoComponent } from './home/curso/curso.component';
 import { MatCardModule } from '@angular/material/card';
-import { CursoInfoComponent } from './curso-info/curso-info.component'
+import { MatStepperModule } from '@angular/material/stepper';
+import { CursoInfoComponent } from './curso-info/curso-info.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,8 @@ import { CursoInfoComponent } from './curso-info/curso-info.component'
     NgbModule,
     BrowserAnimationsModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MatStepperModule
   ],
   providers: [Title],
   bootstrap: [AppComponent]

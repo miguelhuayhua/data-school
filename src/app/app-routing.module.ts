@@ -11,11 +11,6 @@ const routes: Routes = [{
   path: '',
   children: [
     {
-      path: 'home',
-      component: HomeComponent,
-      title: 'Home - Data School Bolivia'
-    },
-    {
       path: 'about',
       component: NosotrosComponent,
       title: 'Nosotros - Data School Bolivia'
@@ -37,7 +32,7 @@ const routes: Routes = [{
     },
     {
       path: '',
-      redirectTo: 'home',
+      component: HomeComponent,
       pathMatch: 'full'
     }
   ]

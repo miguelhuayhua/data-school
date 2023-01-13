@@ -1,0 +1,97 @@
+.title {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+
+    h1 {
+        margin-left: 10%;
+        margin-top: 3px;
+        font-size: 2em;
+    }
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+
+    button {
+        background-color: rgb(210, 217, 237);
+        box-shadow: 0 0 10px rgba(50, 62, 98, 0.416);
+        height: 50px;
+        border-radius: 30px;
+        font-weight: bold;
+    }
+
+    .buy {
+        button {
+            background-color: transparent;
+            height: 30px;
+            width: 200px;
+            box-shadow: none;
+            display: flex;
+            align-items: center;
+            border: solid 2px #c00000;
+            color: #c00000;
+            padding: 0 !important;
+
+            .price {
+                width: 100%;
+                text-align: center;
+                display: block;
+            }
+
+            span {
+                display: flex;
+                align-items: center;
+                background-color: #c00000;
+                color: whitesmoke;
+                height: 100%;
+                border-radius: 30px;
+                padding: 0 10px;
+            }
+        }
+
+        p {
+            text-align: center;
+            margin: 5px auto;
+            text-decoration: line-through;
+        }
+    }
+}
+
+h3 {
+    color: #c00000;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+.info {
+
+    p {
+        color: rgba(0, 0, 0, 0.647);
+    }
+}
+
+li {
+    color: #001d3dc3;
+}
+
+mat-vertical-stepper {
+    width: 100%;
+}
+
+::ng-deep .mat-step-header {
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.099);
+        cursor: pointer;
+    }
+}
+
+::ng-deep .mat-step-header .mat-step-icon-selected {
+    background-color: #c00000 !important;
+}
