@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { CursoInfoComponent } from './curso-info/curso-info.component';
 
 const routes: Routes = [{
   path: '',
@@ -20,14 +21,19 @@ const routes: Routes = [{
       title: 'Nosotros - Data School Bolivia'
     },
     {
-      path: 'courses',
+      path: 'cursos',
       component: CursosComponent,
       title: 'Cursos - Data School Bolivia'
     },
     {
-      path: 'contact',
+      path: 'contacto',
       component: ContactoComponent,
       title: 'Contáctanos - Data School Bolivia'
+    },
+    {
+      path: 'curso/:id',
+      component: CursoInfoComponent,
+      title: 'Curso'
     },
     {
       path: '',

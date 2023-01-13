@@ -35,4 +35,15 @@ i {
     align-items: center;
     background-color: whitesmoke;
     border-radius: 50%;
+    transition: .5s color, .5s background-color;
+}
+
+.refs{
+    &:hover{
+        i{
+            color: white;
+            background-color: #c00000;
+            transition: .5s color, .5s background-color;
+        }
+    }
 }

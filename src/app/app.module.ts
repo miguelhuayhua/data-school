@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,7 +13,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { FooterComponent } from './static/footer/footer.component';
 import { CursoComponent } from './home/curso/curso.component';
-import { MatCardModule } from '@angular/material/card'
+import { MatCardModule } from '@angular/material/card';
+import { CursoInfoComponent } from './curso-info/curso-info.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,8 @@ import { MatCardModule } from '@angular/material/card'
     CursosComponent,
     ContactoComponent,
     FooterComponent,
-    CursoComponent
+    CursoComponent,
+    CursoInfoComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,7 @@ import { MatCardModule } from '@angular/material/card'
     MatIconModule,
     MatCardModule
   ],
-  providers: [],
+  providers: [Title],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
