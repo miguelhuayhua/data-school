@@ -12,6 +12,8 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { FooterComponent } from './static/footer/footer.component';
+import { CursoComponent } from './home/curso/curso.component';
+import { MatCardModule } from '@angular/material/card'
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,14 +22,16 @@ import { FooterComponent } from './static/footer/footer.component';
     NosotrosComponent,
     CursosComponent,
     ContactoComponent,
-    FooterComponent
+    FooterComponent,
+    CursoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

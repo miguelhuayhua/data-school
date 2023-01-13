@@ -75,6 +75,7 @@ li {
     left: 0 !important;
     width: 100%;
     animation: fixed 1s;
+    z-index: 10;
 }
 
 @keyframes fixed {

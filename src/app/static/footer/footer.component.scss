@@ -1,8 +1,38 @@
-footer{
+footer {
     background-color: #d4dbe8;
 }
 
-
-.copyright{
+.logo-edit {
     background-color: #001d3d;
+}
+
+.copyright {
+    background-color: #001d3d;
+}
+
+h4 {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 10px 0;
+}
+
+a {
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #001d3d;
+}
+
+
+i {
+    color: #c00000;
+    font-size: 1.5em;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 50%;
 }

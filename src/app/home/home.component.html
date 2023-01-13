@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid bg-light">
     <div class="row">
         <div class="col-12 col-lg-7 offset-lg-1">
             <h2>Sé un experto en</h2>
@@ -30,12 +30,23 @@
     </div>
     <section class="container">
         <div class="row">
-           <div class="col-12 my-3 rounded" style="height: 400px; background-color: #001c3c ;">
+            <div class="col-12 my-3 rounded" style="height: 400px; background-color: #001c3c ;">
 
-           </div>
-           <div class="col-12 my-3 rounded shadow " style="height: 150px; ">
+            </div>
+            <div class="col-12 my-3 rounded shadow " style="height: 150px; ">
 
-           </div>
+            </div>
+            <div class="col-12 col-md-10">
+                <h2>
+                    PROGRAMAS Y CURSOS EN VIVO
+                </h2>
+            </div>
+            <div class="col-10 offset-1 offset-md-0 col-md-2 d-flex justify-content-center align-items-center">
+                <button class="btn custom-btn w-100">Ver más</button>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4" *ngFor="let i of [1,2,3]">
+                <app-curso></app-curso>
+            </div>
         </div>
     </section>
 </div>
