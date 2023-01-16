@@ -4,10 +4,25 @@ footer {
 
 .logo-edit {
     background-color: #001d3d;
+    display: flex;
+    align-items: center;
+
+    img {
+        display: block;
+        width: 75%;
+        margin: 10px auto;
+        max-width: 150px;
+    }
 }
 
 .copyright {
     background-color: #001d3d;
+    color: whitesmoke;
+    font-size: .9em;
+    font-weight: 100;
+    padding: 20px 0;
+    text-align: center;
+
 }
 
 h4 {
@@ -38,9 +53,9 @@ i {
     transition: .5s color, .5s background-color;
 }
 
-.refs{
-    &:hover{
-        i{
+.refs {
+    &:hover {
+        i {
             color: white;
             background-color: #c00000;
             transition: .5s color, .5s background-color;

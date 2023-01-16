@@ -96,7 +96,7 @@ mat-vertical-stepper {
     background-color: #c00000 !important;
 }
 
-mat-icon {
+.play {
     position: absolute;
     display: flex;
     align-items: center;
@@ -121,4 +121,34 @@ mat-icon {
             transition: color .5s;
         }
     }
+}
+
+.header {
+    text-align: center;
+    background-color: #001d3d;
+    color: whitesmoke;
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.info {
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    margin: 10px 0;
+
+    &:nth-child(5) {
+        border-left: #001d3d solid 1px;
+        border-right: #001d3d solid 1px;
+    }
+}
+
+
+.btn-ins {
+    background-color: #c00000;
+    color: whitesmoke;
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
+
 }
