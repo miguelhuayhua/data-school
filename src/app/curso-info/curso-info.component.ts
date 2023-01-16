@@ -14,4 +14,13 @@ export class CursoInfoComponent implements OnInit {
   ngOnInit() {
     this.title.setTitle('El pepe')
   }
+
+  downloadPdf() {
+    console.log('sí')
+    var link = document.createElement('a');
+    link.href = '../assets/pdf.pdf'
+    link.download = 'pdf.pdf';
+    link.dispatchEvent(new MouseEvent('click'));
+
+  }
 }
