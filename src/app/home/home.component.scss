@@ -23,7 +23,7 @@ h3 {
         blink-caret .70s step-end infinite;
 }
 .custom-btn {
-    border-radius: 20px;
+    border-radius: 10px;
     border: #001d3d solid 1px;
     transition: background-color .5s, color .5s;
 
@@ -41,10 +41,11 @@ h2 {
 }
 
 hr {
-    height: 4px;
+    height: 3px;
     opacity: 1;
     background-color: #c00000;
     flex: 1;
+    border: none;
 }
 
 .presentation{

@@ -1,1 +1,8 @@
-<p>cursos works!</p>
+<section class="container">
+    <div class="row">
+        <div *ngFor="let curso of this.cursos" class="col-4">
+            <app-curso2 [curso]="this.curso"></app-curso2>
+        </div>
+
+    </div>
+</section>

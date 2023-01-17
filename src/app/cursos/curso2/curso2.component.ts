@@ -2,11 +2,11 @@ import { Component, Input } from '@angular/core';
 import { Curso } from 'src/app/type';
 
 @Component({
-  selector: 'app-curso',
-  templateUrl: './curso.component.html',
-  styleUrls: ['./curso.component.scss']
+  selector: 'app-curso2',
+  templateUrl: './curso2.component.html',
+  styleUrls: ['./curso2.component.scss']
 })
-export class CursoComponent {
+export class Curso2Component {
   @Input() curso: Curso = {
     aprendizaje: [],
     banner: '', costo: 0,
@@ -21,4 +21,5 @@ export class CursoComponent {
     tipo: '',
     url: ''
   }
+
 }

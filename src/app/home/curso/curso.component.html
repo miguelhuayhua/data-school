@@ -1,7 +1,6 @@
 <mat-card class="shadow w-100 rounded-5 overflow-hidden my-4">
     <div class="position-relative">
-        <img class="img-fluid" src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-            alt="Photo of a Shiba Inu">
+        <img class="img-fluid" src="{{this.curso.banner}}" alt="Photo of a Shiba Inu">
         <span class="badge">
             Curso
         </span>
@@ -15,19 +14,19 @@
     <mat-card-footer>
         <mat-card-title>
             <h5>
-                <a routerLink="/curso/1">DATABRICKS</a>
+                <a routerLink="/curso/{{this.curso.url}}">{{this.curso.nombre}}</a>
             </h5>
         </mat-card-title>
 
     </mat-card-footer>
     <mat-card-actions>
-        <a routerLink="/curso/2" class="btn btn-comprar">
+        <a routerLink="/curso/{{this.curso.url}}" class="btn btn-comprar">
             <div>
                 <mat-icon>shopping_cart</mat-icon>
-            COMPRAR 
+                COMPRAR
             </div>
             <span>
-                100$
+                {{this.curso.costo}} $
             </span>
         </a>
     </mat-card-actions>

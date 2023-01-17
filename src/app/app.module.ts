@@ -16,6 +16,7 @@ import { CursoComponent } from './home/curso/curso.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatStepperModule } from '@angular/material/stepper';
 import { CursoInfoComponent } from './curso-info/curso-info.component';
+import { Curso2Component } from './cursos/curso2/curso2.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import { CursoInfoComponent } from './curso-info/curso-info.component';
     ContactoComponent,
     FooterComponent,
     CursoComponent,
-    CursoInfoComponent
+    CursoInfoComponent,
+    Curso2Component
   ],
   imports: [
     BrowserModule,

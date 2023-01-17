@@ -4,7 +4,7 @@
             <div class="title">
                 <img src="http://drive.google.com/uc?export=view&id=18I0w2dPNT_UL4XD62rZGwBSalraIIWD-" alt="">
                 <h1>
-                    DATA SCIENCE
+                    {{this.curso.nombre}}
                 </h1>
             </div>
             <div class="actions">
@@ -14,7 +14,7 @@
                 <div class="buy">
                     <button class="btn">
                         <div class="price">
-                            50.00$
+                            {{this.curso.costo}} $
                         </div>
                         <span>
                             Comprar
@@ -26,21 +26,17 @@
                 </div>
             </div>
             <div class="info">
-                <h3>
+                <h3 class="mt-3">
                     Acerca del Curso
                 </h3>
                 <p>
-                    Databricks se ha convertido en una de las plataformas más importantes compatible con Azure, AWS y
-                    Google
-                    Cloud. Esto hace que Databricks sea una de las habilidades más demandadas para los ingenieros de
-                    datos y
-                    unas de las habilidades más valiosas hoy en día.
+                    {{this.curso.descripcion}}
                 </p>
-                <h3>
+                <h3 class="mt-3">
                     ¿Qué necesito?
                 </h3>
                 <p>
-                    En esta asignatura se requiere tener ganas de aprender y tener claro el alcance del curso.
+                    {{this.curso.requisitos}}
                 </p>
             </div>
             <div class="topics">
@@ -48,69 +44,35 @@
                     ¿Qué temas voy a aprender?
                 </h3>
                 <mat-vertical-stepper headerPosition="bottom" #stepper>
-                    <ng-template matStepperIcon="edit">
-                        <mat-icon>done</mat-icon>
-                    </ng-template>
-                    <mat-step>
-                        <ng-template matStepLabel>
-                            <h5>
-                                DATABRICKS CON AZURE
-                            </h5>
+                    <div *ngFor="let val of this.curso.aprendizaje">
+                        <ng-template matStepperIcon="edit">
+                            <mat-icon>done</mat-icon>
                         </ng-template>
-                        <div>
-                            <ol>
-                                <li>
-                                    Introducción a Databricks con Azure
-                                </li>
-                                <li>
-                                    Azure Databricks cluster
-                                </li>
-                                <li>
-                                    Azure Databricks notebooks
-                                </li>
-                                <li>
-                                    Azure CLI
-                                </li>
-                            </ol>
-                        </div>
-                    </mat-step>
-                    <ng-template matStepperIcon="edit">
-                        <mat-icon>done</mat-icon>
-                    </ng-template>
-                    <mat-step label="Antes de começar...">
-                        <div>
-                        </div>
-                    </mat-step>
-                    <ng-template matStepperIcon="edit">
-                        <mat-icon>done</mat-icon>
-                    </ng-template>
-                    <mat-step label="Antes de começar...">
-                        <div>
-                        </div>
-                    </mat-step>
-                    <ng-template matStepperIcon="edit">
-                        <mat-icon>done</mat-icon>
-                    </ng-template>
-                    <mat-step label="Antes de começar...">
-                        <div>
-                        </div>
-                    </mat-step>
-                    <ng-template matStepperIcon="edit">
-                        <mat-icon>done</mat-icon>
-                    </ng-template>
-                    <mat-step label="Antes de começar...">
-                        <div>
-                        </div>
-                    </mat-step>
+                        <mat-step>
+                            <ng-template matStepLabel>
+                                <h5>
+                                    {{this.val.tema}}
+                                </h5>
+                            </ng-template>
+                            <div>
+                                <ol>
+                                    <li *ngFor="let subtema of this.val.subtemas">
+                                        {{this.subtema}}
+                                    </li>
+                                </ol>
+                            </div>
+                        </mat-step>
+                    </div>
 
                 </mat-vertical-stepper>
+
             </div>
         </div>
         <div class="col-12 col-lg-4 my-3">
             <div class="row">
                 <div class="col-12">
                     <div class="position-relative">
-                        <img src="https://wallpaperaccess.com/full/1728956.jpg" alt="fondo"
+                        <img src="{{this.curso.banner}}" alt="fondo"
                             class="img-fluid rounded-3 overflow-hidden p-3 video">
                         <mat-icon class="play">play_arrow</mat-icon>
                     </div>

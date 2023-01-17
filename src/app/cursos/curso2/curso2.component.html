@@ -1,0 +1,42 @@
+<mat-card class="shadow w-100 rounded-2 overflow-hidden my-4">
+    <div class="position-relative">
+        <img class="img-fluid" src="{{this.curso.banner}}"
+            alt="Photo of a Shiba Inu">
+        <span class="badge">
+            {{this.curso.tipo}}
+        </span>
+        <span class="badge">
+            Online
+        </span>
+        <span class="badge">
+            90% práctico
+        </span>
+    </div>
+    <mat-card-footer>
+        <mat-card-title>
+            <p>Curso</p>
+            <h5>
+                <a routerLink="/curso/1">{{this.curso.nombre}}</a>
+            </h5>
+        </mat-card-title>
+
+    </mat-card-footer>
+    <mat-card-actions>
+        <div class="w-100">
+            <div class="profile">
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="">
+                <div>
+                    <p>{{this.curso.nombre_doc}}
+                    </p>
+                    <p>Docente</p>
+                </div>
+            </div>
+            <span class="price">
+               {{this.curso.costo}} $
+            </span>
+            <button class="btn custom-btn">
+                Comprar Curso
+            </button>
+        </div>
+    </mat-card-actions>
+</mat-card>

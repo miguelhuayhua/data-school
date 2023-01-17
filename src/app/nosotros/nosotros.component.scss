@@ -1,0 +1,24 @@
+.about {
+    background: rgb(230,235,242);
+    background: -moz-linear-gradient(90deg, rgba(230,235,242,1) 0%, rgba(243,227,227,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(230,235,242,1) 0%, rgba(243,227,227,1) 100%);
+    background: linear-gradient(90deg, rgba(230,235,242,1) 0%, rgba(243,227,227,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e6ebf2",endColorstr="#f3e3e3",GradientType=1); 
+    height: 100px;
+    margin: 20px 0;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.237);
+}
+
+h2{
+    color: #001d3d;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    font-size: 1.5em;
+    color: rgb(141, 141, 141);
+    font-style: italic;
+    padding: 20px 20px 5px 20px;
+}
